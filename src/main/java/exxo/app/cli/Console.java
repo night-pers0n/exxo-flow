@@ -4,4 +4,6 @@ public interface Console {
     
     void print(String text);
     
+    String readLine();
+    
 }
