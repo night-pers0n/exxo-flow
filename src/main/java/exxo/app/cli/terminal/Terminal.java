@@ -1,0 +1,19 @@
+package exxo.app.cli.terminal;
+
+import exxo.app.cli.Console;
+
+import java.io.Reader;
+import java.io.Writer;
+
+public abstract class Terminal implements Console {
+    
+    private final Reader reader;
+    
+    private final Writer writer;
+    
+    protected Terminal(Reader reader, Writer writer) {
+        this.reader = reader;
+        this.writer = writer;
+    }
+    
+}
