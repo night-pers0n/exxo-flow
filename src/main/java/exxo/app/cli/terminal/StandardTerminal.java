@@ -5,7 +5,7 @@ import java.io.Writer;
 
 import java.util.Objects;
 
-public class StandardTerminal extends Terminal {
+class StandardTerminal extends Terminal {
     
     private StandardTerminal(Reader reader, Writer writer) {
         super(reader, writer);
