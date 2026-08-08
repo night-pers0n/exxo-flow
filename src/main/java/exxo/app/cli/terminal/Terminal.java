@@ -16,4 +16,8 @@ public abstract class Terminal implements Console {
         this.writer = writer;
     }
     
+    public static Terminal standard() {
+        return (Terminal) (new StandardTerminal());
+    }
+    
 }
