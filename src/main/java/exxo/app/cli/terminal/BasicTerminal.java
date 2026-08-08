@@ -35,6 +35,10 @@ public class BasicTerminal implements Console {
         );
     }
     
+    protected BasicTerminal() {
+        this(new BufferedReader(new InputStreamReader(System.in)));
+    }
+    
     public static BasicTerminal of(Reader reader, Writer writer) {
         return new BasicTerminal(
             Objects.requireNonNull(reader), 
