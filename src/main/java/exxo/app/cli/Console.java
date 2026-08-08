@@ -1,9 +1,11 @@
 package exxo.app.cli;
 
+import java.io.IOException;
+
 public interface Console {
     
-    void print(String text);
-    
     String readLine();
+    
+    void print(String text) throws IOException;
     
 }
