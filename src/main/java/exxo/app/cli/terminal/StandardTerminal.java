@@ -1,14 +1,16 @@
 package exxo.app.cli.terminal;
 
-import java.io.Reader;
-import java.io.Writer;
-
-import java.util.Objects;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 
 class StandardTerminal extends Terminal {
     
-    private StandardTerminal(Reader reader, Writer writer) {
-        super(reader, writer);
+    private StandardTerminal() {
+        super(
+            new BufferedReader(new InputStreamReader(System.in)), 
+            new PrintWriter(System.out)
+        );
     }
     
 }
