@@ -11,11 +11,4 @@ class StandardTerminal extends Terminal {
         super(reader, writer);
     }
     
-    public static StandardTerminal of(Reader reader, Writer writer) {
-        return new StandardTerminal(
-            Objects.requireNonNull(reader), 
-            Objects.requireNonNull(writer)
-        );
-    }
-    
 }
