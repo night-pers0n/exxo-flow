@@ -19,6 +19,10 @@ public class BasicTerminal implements Console {
         return new BasicTerminal(Objects.requireNonNull(writer));
     }
     
+    public static BasicTerminal standard() {
+        return of(new PrintWriter(System.out));
+    }
+    
     @Override
     public void print(String text) {
     }
