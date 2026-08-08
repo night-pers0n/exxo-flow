@@ -10,4 +10,8 @@ public class CreateWorkspace {
         this.reader = new Scanner(System.in);
     }
     
+    public static CreateWorkspace start() {
+        return new CreateWorkspace();
+    }
+    
 }
