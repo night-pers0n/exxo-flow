@@ -1,0 +1,13 @@
+package exxo.app.workflow;
+
+import java.util.Scanner;
+
+public class CreateWorkspace {
+    
+    private final Scanner reader;
+    
+    private CreateWorkspace() {
+        this.reader = new Scanner;
+    }
+    
+}
