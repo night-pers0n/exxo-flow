@@ -7,7 +7,7 @@ public class CreateWorkspace {
     private final Scanner reader;
     
     private CreateWorkspace() {
-        this.reader = new Scanner;
+        this.reader = new Scanner(System.in);
     }
     
 }
