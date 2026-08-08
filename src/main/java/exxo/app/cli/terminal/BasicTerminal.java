@@ -47,7 +47,7 @@ public class BasicTerminal implements Console {
     }
     
     public static BasicTerminal standard() {
-        return of(new PrintWriter(System.out));
+        return new BasicTerminal();
     }
     
     @Override
